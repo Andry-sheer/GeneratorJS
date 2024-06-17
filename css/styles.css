@@ -1,0 +1,124 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body {
+  font-family:'Montserrat';
+  height: 100vh;
+  padding: 10px;
+  background: url('/images/unnamed.png') center/cover;
+
+
+  @media (max-width: 300px) {
+    font-size: 14px;
+  }
+}
+
+.containerOne {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 4px solid black;
+  position: relative;
+  background: rgba(0, 0, 0, 0.292);
+  color: aliceblue;
+  font-size: 18px;
+  position: relative;
+
+  @media (max-width: 450px) {
+    background: transparent;
+    border: transparent;
+    font-size: 15px;
+  }
+}
+
+.containerOne__title {
+  font-size: 35px;
+
+  @media (max-width: 450px) {
+    letter-spacing: 0;
+    font-size: 20px;
+  }
+}
+
+.containerOne__subTitle, .containerTwo__subTitle, .containerThree__subTitle {
+  color: yellow;
+}
+
+.containerOne__error {
+  padding: 10px;
+  background: red;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  display: none;
+  transition: all .4s;
+
+  @media (max-width: 450px), (max-width: 768px) {
+    letter-spacing: 0;
+    font-size: 15px;
+  }
+}
+
+.containerOne__border, .containerTwo__border, .containerThree__border {
+  border-bottom: 3px solid yellow;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: -10px;
+
+  @media (max-width: 450px), (max-width: 768px) {
+    border-bottom: 2px solid yellow;
+  }
+}
+.containerOne__border {
+  width: 200px;
+}
+
+.containerTwo__border {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.containerTwo, .containerThree {
+  display: flex;
+  border-radius: 12px;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 50px;
+  color: rgb(255, 255, 255);
+  display: none;
+  border-radius: 12px;
+  border: 4px solid black;
+  background: url('/images/unnamed.png') center/cover;
+  
+
+  @media (max-width: 300px), (max-width: 768px) {
+    letter-spacing: 0;
+    font-size: 13px;
+    color: white;
+  }
+}
+
+/* .containerThree {
+  display: flex;
+  border-radius: 12px;
+  border: 4px solid black;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  padding: 50px;
+  color: green;
+  display: none;
+} */
+
