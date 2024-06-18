@@ -26,7 +26,7 @@ function Boo() {
           num++
           if(num >= 4){
           console.log('boo: finish')
-          return {value: num, done: true} 
+          return {value: undefined, done: true} 
         }
       return {value: num, done: false}
     }
